@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>This is a PNGTubing Guide!</title>
+  </head>
+  <body style="background-color:#FAF9F6;">
+    <h1>Intro</h1>
+    <p> Hi I'm <a href='https://twitter.com/GlassEmVT' target='_blank'>Glass</a> from the internet, and this is a step by step guide for Discord Reactive PNGTubing! This is also useful if you want to set up reactive PNGs for other users in your call.
+      <br> Okie let's get into it! </p>
+    <h2>Steps</h2>
+    <p>
+      <ol>     
+         <!--step 1!  -->
+        <li> Open the <a href='https://streamkit.discord.com/overlay'target='_blank'>Discord Streamkit Website</a> and select Install for OBS
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1gRHl6lNG2IUB1pV_qvzPMgnktT_PiOth' width='600' alt='A picture of the Discord Streamkit website, 
+        with the Install for OBS button encirled'/>
+        <br><br>
+        <!-- s2 -->
+        <li> Select the Voice Widget tab 
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1MzKbRY6NBFUEsJDmXSO80L9KSoxqCcnR' width='600' alt='A picture of the Discord Streamkit website, 
+        with the Voice Widget button encircled'/>
+        <br><br>
+        <!-- s3 -->
+        <li> Select the specific server and voice channel you'd like the reactive images to work for
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1e-y7Imh5HRfG_dduSIdWuP7GUezKC3Fh' width='600' alt='A picture of the Discord Streamkit website, 
+        with the Server and Voice Channel boxes encircled'/>
+        <br><br>
+        <!-- s4 -->
+        <li> Copy the URL generated onto your computer's clipboard
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1EQYA1djrLC12HlvVz-PPAM-YdSVKe3hP' width='600' alt='A picture of the Discord Streamkit website, 
+        with the browser source box encircled'/>
+        <br><br>
+        <!-- s5 -->
+        <li> Create a new Browser source in OBS
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1mfeBZ41LXoEghjYvecKWL3XYJ6fYg82e' width='600' alt='A picture of OBS, 
+        with the + button for sources encircled'/>
+        <img src='https://drive.google.com/uc?id=1T8T7ibuDJa57RO-iI6J1fj7i3tIKr_gR' width='600' alt='A picture of OBS, 
+        with the Browser source button encircled'/>
+        <br><br>
+        <!-- s6 -->
+        <li> Paste the URL that we copied from the Discord Streamkit website into the URL box of this new browser source
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1y0jgX76sSOsjlhdR1r9DEs6Ym1suONLS' width='600' alt='A picture of OBS, 
+        with the URL part of the browser source menu encircled'/>
+        <br><br>
+        <!-- s7 -->
+        <li> Enable Developer Mode in Discord's Advanced Settings
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1xDKP8fgIK8NjmXy7gGgIgaFH38jlbTBc' width='600' alt='A picture of Discord, 
+        with the Developer Mode button in Advanced settings encircled'/>
+        <br><br>
+        <!-- s8 -->
+        <li> Right click on the Discord user you'd like to setup reactive PNGs for and click Copy ID
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1IBPKUzjIAJhbQOkoMZIvBux2jG7sIaYg' width='600' alt='A picture of Discord, 
+        with the Copy ID button for GlassEm encircled'/>
+        <br><br>
+        <!-- s9 -->
+        <li> Paste the User ID into the User ID box below
+        </li>
+        <!-- s10 -->
+        <li> Acquire the image links for the speaking and not speaking PNGs you'd like to use. This can usually be done by right clicking an image and selecting copy image link/address
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1YrCHahERoSr8Ph9_oI5owxh5PfH3_PBM' width='600' alt='Picture of a reference photo on imgur, 
+        with the copy image link button selected after right clicking'/>
+        <br><br>
+        <!-- s11 -->
+        <li> Paste these image links into their respective boxes below.
+        </li>
+        <!-- s12 -->
+        <li> Enter a brightness number for your PNG while not speaking (ideally between 0-100 but do what makes you happy)
+        </li>
+        <!-- s13 -->
+        <li> With the boxes now full, click generate code! 
+          Copy and paste this code into the Custom CSS box of your Browser source in OBS and you should be good to go!
+        </li>
+        <br>
+        <img src='https://drive.google.com/uc?id=1Xn-T2UFMKrRib7DKmV2x23Lk7y8P6lK7' width='600' alt='Picture of a reference photo on imgur, 
+        with the copy image link button selected after right clicking'/>
+        <li> If the image isn't showing, you might need to tinker with the Width and Height boxes if your PNG is large. 
+          Feel free to DM me on <a href='https://twitter.com/GlassEmVT' target='_blank'>Twitter</a> if you have questions
+        </li>
+      </ol>
+    </p>
+    <head>
+    <script language="JavaScript">
+        function showInput() 
+            {document.getElementById('user').textContent  = 
+                            document.getElementById("user_id").value;
+            document.getElementById('speaking').textContent  = 
+                        document.getElementById("speaking_image").value;
+            document.getElementById('notspeaking').textContent  = 
+                    document.getElementById("not_speaking_image").value;
+            document.getElementById('brightness').textContent  = 
+                    document.getElementById("brighty").value;
+            document.getElementById('speaking_preview').textContent  = 
+                document.getElementById("speaking_image").value;
+            document.getElementById('notspeaking_preview').textContent  = 
+                    document.getElementById("not_speaking_image").value;
+            document.getElementById('brightness_preview').textContent  = 
+                    document.getElementById("brighty").value;
+            }
+      </script>
+    
+      </head>
+    <body>
+    
+      <form>
+        <label><b>User ID</b></label>
+        <input type="text" name="user" id="user_id">
+        <br>
+        <label><b>Speaking Image</b></label>
+        <input type="text" name="speaking" id="speaking_image">
+        <br>
+        <label><b>Not Speaking Image</b></label>
+        <input type="text" name="notspeaking" id="not_speaking_image">
+        <br>
+        <label><b>Not Speaking Brightness %</b></label>
+        <input type="text" name="bright" value="50" id="brighty">
+      </form>
+    
+      <input type="submit" value="Generate Code" onclick="showInput();"><br/>
+
+      <label>Your Code: </label>
+      <p>
+        li.voice-state:not([data-reactid*="<span id='user'></span>"]) { display:none; }
+      </p>  
+      <p>
+        .avatar {<br>
+        content:url(<span id='notspeaking'></span>);<br>
+        height:auto !important;<br>
+        width:auto !important;<br>
+        border-radius:0% !important;<br>
+        filter: brightness(<span id='brightness'></span>%);<br>
+        }<br>
+        <br>
+        .speaking {<br>
+        border-color:rgba(0,0,0,0) !important;<br>
+        position:relative;<br>
+        animation-name: speak-now;<br>
+        animation-duration: 1s;<br>
+        animation-fill-mode:forwards;<br>
+        filter: brightness(100%);<br>
+        content:url(<span id='speaking'></span>);<br>
+        }<br>
+        <br>
+        @keyframes speak-now {<br>
+        0% { bottom:0px; }<br>
+        15% { bottom:10px; }<br>
+        30% { bottom:0px; }<br>
+        }<br>
+        <br>
+        li.voice-state{ position: static; }<br>
+        div.user{ position: absolute; left:40%; bottom:5%; }<br>
+        <br>
+        body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }<br>
+      </p>
+  </body>
+</html>
